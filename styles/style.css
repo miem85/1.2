@@ -388,6 +388,42 @@ section {
   font-size: 0.9rem;
 }
 
+/* Om mig */
+
+.about-page {
+  padding-block: 4rem;
+}
+
+.about-page-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-page-text h2 {
+  margin-bottom: 1.5rem;
+}
+
+.about-page-text .button {
+  margin-top: 1rem;
+}
+
+.about-page-portrait {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  min-height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--surface);
+}
+
+.about-page-portrait img {
+  width: min(100%, 420px);
+  height: auto;
+}
+
 /* Surfplattor */
 
 @media (min-width: 600px) {
@@ -396,7 +432,7 @@ section {
   }
 }
 
-/* Bildjämförelser på större skärmar */
+/* Mellanstora skärmar */
 
 @media (min-width: 700px) {
   .comparison-grid {
@@ -420,8 +456,9 @@ section {
     min-height: 500px;
   }
 
-  .about-preview-content {
-    grid-template-columns: 1fr 1fr;
+  .about-preview-content,
+  .about-page-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 4rem;
   }
 
