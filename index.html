@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ett bildgalleri med fokus på fotografi, färg och digital bildredigering.">
+    <meta name="author" content="Mikael Emanuelsson">
+
+    <title>Bildgalleri | Startsida</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <!-- Webbplatsens SVG-logotyp -->
+            <a href="index.html" class="logo" aria-label="Bildgalleri, till startsidan">
+                <img src="images/logo.svg" alt="Bildgalleri" width="240" height="80">
+            </a>
+
+            <nav class="main-nav" aria-label="Huvudnavigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Startsida</a></li>
+                    <li><a href="bildredigering.html">Bildredigering</a></li>
+                    <li><a href="om-mig.html">Om mig</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Headerbilden är ett eget fotografi och får sin opacitet via CSS -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-image"></div>
+
+            <div class="container hero-content">
+                <h1 id="hero-title">Fotografi & bildredigering</h1>
+                <p>
+                    Ett personligt bildgalleri där färg, ljus och kreativitet
+                    står i centrum.
+                </p>
+                <a href="#galleri" class="button">Utforska bildgalleriet</a>
+            </div>
+        </section>
+
+        <section class="introduction" aria-labelledby="intro-title">
+            <div class="container">
+                <h2 id="intro-title">Välkommen till mitt bildgalleri</h2>
+
+                <p>
+                    Den här webbplatsen är skapad som en del av laboration 1.2
+                    i kursen Bildbehandling vid Mittuniversitetet.
+                    Syftet är att arbeta med digitala fotografier och
+                    undersöka hur bildredigering kan förbättra ett motiv.
+                </p>
+
+                <p>
+                    Jag har arbetat med bland annat färgkorrigering,
+                    ljus, kontrast, beskärning, borttagning av objekt
+                    och förändring av färger i fotografier.
+                </p>
+
+                <p>
+                    Bilderna har redigerats i Photopea och webbplatsen
+                    har utvecklats med HTML och CSS i Visual Studio Code.
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="galleri" aria-labelledby="gallery-title">
+            <div class="container">
+
+                <h2 id="gallery-title">Utvalda fotografier</h2>
+                <p class="section-description">
+                    Tre fotografier som har bearbetats med olika
+                    bildredigeringstekniker.
+                </p>
+
+                <!-- Bildserien visas i ett responsivt CSS-grid -->
+                <div class="gallery-grid">
+
+                    <article class="gallery-card">
+                        <img
+                            src="images/bildserie001.jpeg"
+                            alt="Färgglada byggnader och båtar längs en kanal"
+                            loading="lazy"
+                        >
+                        <div class="card-content">
+                            <h3>Färger vid kanalen</h3>
+                            <p>
+                                Ett fotografi där ljus, kontrast och
+                                färgbalans har justerats.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card">
+                        <img
+                            src="images/bildserie002.jpeg"
+                            alt="Historisk kyrkobyggnad med kupol och varmt färgade fasader"
+                            loading="lazy"
+                        >
+                        <div class="card-content">
+                            <h3>Historisk arkitektur</h3>
+                            <p>
+                                En bild där ett störande objekt har
+                                avlägsnats och färgerna bearbetats.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card">
+                        <img
+                            src="images/bildserie003.jpeg"
+                            alt="Sjöbodar i olika färger vid vattnet"
+                            loading="lazy"
+                        >
+                        <div class="card-content">
+                            <h3>Sjöbodar vid vattnet</h3>
+                            <p>
+                                Ett fotografi som har rätats upp,
+                                färgkorrigerats och fått en byggnad omfärgad.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="gallery-action">
+                    <a href="bildredigering.html" class="button">
+                        Se bilderna före och efter
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about-preview" aria-labelledby="about-title">
+            <div class="container about-preview-content">
+
+                <div>
+                    <h2 id="about-title">Om fotografen</h2>
+                    <p>
+                        Jag heter Mikael Emanuelsson och studerar
+                        webbutveckling vid Mittuniversitetet.
+                        Här kombinerar jag mitt intresse för teknik
+                        och kreativt arbete med digital bildbehandling.
+                    </p>
+                    <a href="om-mig.html" class="text-link">Läs mer om mig</a>
+                </div>
+
+                <!-- Porträttet har transparent bakgrund -->
+                <img
+                    src="images/portrait.png"
+                    alt="Porträtt av Mikael Emanuelsson"
+                    class="about-preview-image"
+                    loading="lazy"
+                >
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Mikael Emanuelsson</p>
+            <p>Laboration 1.2 | Bildbehandling | Mittuniversitetet</p>
+        </div>
+    </footer>
+
+</body>
+</html>
